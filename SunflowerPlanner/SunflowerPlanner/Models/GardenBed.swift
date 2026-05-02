@@ -4,13 +4,12 @@
 //
 //  Created by Sophia Thi on 4/17/26.
 
-// Based on the dimensions of the JS class
 
 import Foundation
 
 // Needs to be Identifiable AND Codable
 // Identifiable means the data has a unique ID to track a specific bed
-// The UUID will be like the PK id I created in MySQL
+// The UUID will be like the PK ID I created in MySQL
 // Codable combines Encodable and Decodable
 // It allows the data in the struct to be converted to/from stored data
 // Codable Ref: https://www.hackingwithswift.com/articles/119/codable-cheat-sheet
@@ -31,6 +30,7 @@ struct GardenBed: Identifiable, Codable {
     }
     
     // Gets the total number of cells for debugging purposes
+    // I do like knowing how many cells there are, though. 
     var totalCells: Int {
         length * width
     }
